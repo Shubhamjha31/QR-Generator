@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar{
+    
+    margin-top: 150px;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    background-color: bisque;
+    display: flex;
+}
+form{
+    padding-top: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+.bar{
+    width: 100%;
+    max-width: 550px;
+
+}
+
+.material-symbols-outlined{
+    margin: auto 10px;
+    font-size: 20px;
+}
+
+.searchbar input{
+    padding: 15px 10px 10px 10px;
+    border-radius: 15px;
+    height: 90%;
+    font-size: 20px;
+    border: none;
+    background-color: bisque;
+    
+}
+
+.searchbar input:focus{
+    outline: none;
+    border: none;
+   
+}
+
+.qrContainer{
+    border-radius: 15px;
+    margin-top: 50px;
+    width: 177px;
+    height: 177px;
+    border: solid bisque 5px;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer h6{
+    margin-left: 10px;
+    font-family: "Cedarville Cursive", serif;
+    font-size: 20px;
+    color: darkgrey;
+    font-weight: 100;
+}
+
+.social{
+    display: flex;
+    margin-top: 153px;
+}
+.social a{
+    margin: 0px 10px;
+}
+.icon{
+    height: 25px;
+}

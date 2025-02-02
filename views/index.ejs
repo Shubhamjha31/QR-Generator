@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styling.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="searchbar">
+        <span class="material-symbols-outlined"> search </span>
+        <form action="/generate" method="post">
+          <input class="bar" type="search" name="url" placeholder="Enter your URL" />
+        </form>
+      </div>
+      <% if(locals.htmlContent){ %>
+        <div class="qrContainer"><%-htmlContent%></div>
+      <% } else { %>
+        <div class="qrContainer"></div>
+      <% } %>
+    </div>
+    <footer>
+      <h6>Shubham Jha</h6>
+      <div class="social">
+        <a href="https://www.instagram.com/shubhamjha._31/"
+          ><img class="icon"
+          src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ73JXK-xIL_OPWReLHsg5eMMx-zmWqTyOnXA&s
+          alt="instagram"></a
+        >
+        <a href="https://github.com/Shubhamjha31"
+          ><img
+            class="icon"
+            src="https://cdn-icons-png.flaticon.com/256/25/25231.png"
+            alt="github"
+        /></a>
+        <a href="https://www.linkedin.com/in/shubham-jha-022959298/"
+          ><img
+            class="icon"
+            src="https://banner2.cleanpng.com/20180518/yk/avraxewhx.webp"
+            alt="linkedin"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
